@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+            let a = parseInt(prompt("Mời bạn nhập số"));
+            let b = Math.round(Math.random()* 10);
+            let count = 0;
+            while (a != b && count < 3) {
+                alert("Bạn nhập sai rồi");
+                a = parseInt(prompt("Mời bạn nhập lại"));
+                count++;
+            }
+            if (a == b) {
+                alert("Xin chúc mừng bạn");
+            } else {
+                if (count == 3) {
+                    alert("Bạn đã hết lượt chơi");
+                }
+            }
+</script>
+</html>
